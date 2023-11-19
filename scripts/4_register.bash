@@ -98,8 +98,8 @@ function add_crontab(){
     echo "---------------------------------------------"
     echo "4.6 Adding Metric script to user crontab..."
     crontab -l > /tmp/wg_cron
-    #echo "* * * * * /usr/bin/curl https://objectstorage.us-phoenix-1.oraclecloud.com/n/axslvqlapxxm/b/wg-vpn-tools/o/wg_metric.py | /usr/bin/python3" >> /tmp/wg_cron
-    echo "* * * * * /usr/bin/curl https://raw.githubusercontent.com/eyusufyildiz/wgvpn/main/scripts/wg_metric.py?token=GHSAT0AAAAAACKPP7Z7VXLCU437M6FSGOX2ZKZQP7A  | /usr/bin/python3" >> /tmp/wg_cron
+    # echo "* * * * * /usr/bin/curl https://objectstorage.us-phoenix-1.oraclecloud.com/n/axslvqlapxxm/b/wg-vpn-tools/o/wg_metric.py | /usr/bin/python3" >> /tmp/wg_cron
+    echo "* * * * * /usr/bin/curl https://raw.githubusercontent.com/eyusufyildiz/wg_scripts/main/scripts/wg_metric.py | /usr/bin/python3" >> /tmp/wg_cron
     crontab /tmp/wg_cron
     crontab -l
     rm /tmp/wg_cron
