@@ -6,7 +6,7 @@ WG_COLLECTOR_SERVER = "starvpnzone.duckdns.org"
 WG_COLLECTOR_PORT = 14533
 wg_metric = {}
 interval = 30
-wg_metric["time_interval"] = interval
+wg_metric["time-interval"] = interval
 
 def local_cmd(cmd):
     #print(">", cmd)
