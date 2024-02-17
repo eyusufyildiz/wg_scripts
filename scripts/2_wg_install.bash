@@ -5,8 +5,8 @@ echo "2 Application Installation"
 
 function set_vars(){
     OS=`source /etc/os-release && echo $ID`
-    PKG_LIST_RPM="wireguard-tools curl tcpdump vim net-tools cron"
-    PKG_LIST_DEB="wireguard curl tcpdump vim net-tools speedtest-cli"
+    PKG_LIST_RPM="wireguard-tools curl tcpdump vim net-tools"
+    PKG_LIST_DEB="wireguard curl tcpdump vim net-tools speedtest-cli cron"
 }
 
 function install_apps(){
