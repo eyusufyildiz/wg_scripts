@@ -4,7 +4,7 @@ echo "---------------------------------------------"
 echo "5 Removing Wireguard"
 
 function set_vars(){
-    ADMIN_SERVER="starvpnzone.duckdns.org"
+    ADMIN_SERVER="star-vpn.duckdns.org"
     ADMIN_SERVER_PORT=14533
     WG_SERVER_PUBLIC_KEY=`sudo cat /etc/wireguard/public.key`
     PUBLIC_IP_ADDRESS=`curl https://api.ipify.org`
