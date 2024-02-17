@@ -4,7 +4,7 @@ echo "---------------------------------------------"
 echo "4 Registering..."
 
 function set_vars(){
-    ADMIN_SERVER="starvpnzone.duckdns.org"
+    ADMIN_SERVER="vp.duckdns.org"
     ADMIN_SERVER_PORT=14533
     SERVER_NAME=`echo $HOSTNAME`
     #d1=`shuf -i 11-239 -n1`
