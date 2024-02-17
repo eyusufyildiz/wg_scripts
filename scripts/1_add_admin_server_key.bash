@@ -4,8 +4,8 @@ echo "---------------------------------------------"
 echo "1 Adding Server Key"
 
 function set_vars() {
-    ADMIN_SERVER="starvpnzone.duckdns.org"
-    ADMIN_SERVER_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDs/hiIgOe/yzJilkgIyYj9+3vq3gGIFH4OEWIqJ3/DyE7BWAkccjSEJRqejiMBailwMSkhPKI8VtvsJz2tP63eThaBwhOLzlqgPskbsXHPSDPP6mRpKsIc9ivuX4vhmSl241Z4PI7VWaZSUo3hvoT83qGsUFCs3L7Dp1PTSPcZx2NHt2m6KobAu21Jhzy6vPvBhT09no9D7IzSWK6vfDw3FLrFo8Spvr2KY7QO15RKop+rqYEs/9LP82Oa70To3T7DI8Qx4Q/wFmk7r2Hy90yWX2IVt8G04fI8BWkiBXfpGXxDxF39M4OFY3SDMNqtxeu2HZkWIcO4nTASm2KkZqr2eBAe8jwiT5xdhgMhIW0DybCustxgZpJlekI2Tp+NHCP3RozRK7Cre5+ycWEZib8siZwo3eYfL2yO5YUgnBGc9B92S0Uzg3VFeUCa0ShiQ+VFtFR6a9o+h7j51o4SEfKMf0EOvcR7erP8mnFvknXW9L7ce43hAL07Ees0nLSXXMM= opc@phx4"
+    ADMIN_SERVER="star-vpn.duckdns.org"
+    ADMIN_SERVER_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCSpXCQ/kiGPfuhHm1zb9ljUQV6+xQz5xIKRVt9/liDwaI5fL5/i7Fn7HpyX49QY7qs8xGgjGqpu3Ds1sYPvOOwiF+zWKi6hKzEnRp6Xe5i+aVGXG1gw0lUCcpTNNyRtgr0fKImEBg0+Dh5rHv7FwpnKoTFKCsdlBn93vVIQwBSxsih5p9p6QELo/hnxQ4pc+QXtzTImFHQmTmMNzdfnbrn3sGEm/vSUaOwXDuzM1/AmZA9lycwF+GSBGaCRUxx5eKlKbIG9+nYCAHj0TVJIfKsoeQcGJ/2N3FE6pUw2HzlQp4YdgR7DOxlvgPlqsePuyRRBL74pH5YUd0R6jM1UvX"
     }
 
 function add_server_key() {
