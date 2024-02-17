@@ -15,8 +15,9 @@ function install_apps(){
     
     if [ $OS = "ol" ] || [ $OS = "centos" ]; then
         sudo yum update
-        sudo yum upgrade -y && sudo yum install $PKG_LIST_RPM -y 
-        sudo reboot
+        sudo yum upgrade -y  
+        sudo yum install $PKG_LIST_RPM -y 
+        # sudo reboot
     elif [ $OS = "ubuntu" ] || [ $OS = "debian" ]; then
         sudo apt update
         sudo apt upgrade -y
