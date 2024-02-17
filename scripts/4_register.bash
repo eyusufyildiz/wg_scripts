@@ -7,9 +7,10 @@ function set_vars(){
     ADMIN_SERVER="starvpnzone.duckdns.org"
     ADMIN_SERVER_PORT=14533
     SERVER_NAME=`echo $HOSTNAME`
-    d1=`shuf -i 11-239 -n1`
-    d2=`shuf -i 2-254 -n1`
-    SERVER_IP="10.${d1}.${d2}.1/16"
+    #d1=`shuf -i 11-239 -n1`
+    #d2=`shuf -i 2-254 -n1`
+    #SERVER_IP="10.${d1}.${d2}.1/16"
+    SERVER_IP="10.0.0.1/16"
     WGS_PORT=51820
     #IP_ADDRESS=`curl https://api.ipify.org`
     PUBLIC_IP=`curl https://checkip.amazonaws.com`
