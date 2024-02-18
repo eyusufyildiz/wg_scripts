@@ -4,7 +4,7 @@ echo "---------------------------------------------"
 echo "1 Adding Server Key"
 
 function set_vars() {
-    ADMIN_SERVER="star-vpn.duckdns.org"
+    ADMIN_SERVER="amper1.duckdns.org"
     ADMIN_SERVER_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCSpXCQ/kiGPfuhHm1zb9ljUQV6+xQz5xIKRVt9/liDwaI5fL5/i7Fn7HpyX49QY7qs8xGgjGqpu3Ds1sYPvOOwiF+zWKi6hKzEnRp6Xe5i+aVGXG1gw0lUCcpTNNyRtgr0fKImEBg0+Dh5rHv7FwpnKoTFKCsdlBn93vVIQwBSxsih5p9p6QELo/hnxQ4pc+QXtzTImFHQmTmMNzdfnbrn3sGEm/vSUaOwXDuzM1/AmZA9lycwF+GSBGaCRUxx5eKlKbIG9+nYCAHj0TVJIfKsoeQcGJ/2N3FE6pUw2HzlQp4YdgR7DOxlvgPlqsePuyRRBL74pH5YUd0R6jM1UvX"
     }
 
