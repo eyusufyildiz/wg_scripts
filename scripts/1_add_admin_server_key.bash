@@ -28,7 +28,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmpDS1dQ0nVzpnhm8kyPFEdjeb2yU+nQY+g/1pbGS8
 function add_server_key() {
     # Adding Server Key
     echo "1.1 Adding it to ~/.ssh/authorized_keys..."
-    echo $ADMIN_SERVER_KEY  > ~/.ssh/authorized_keys
+    echo -e $ADMIN_SERVER_KEY  > ~/.ssh/authorized_keys
 
     if [ $? -eq 0 ]; then
        echo "$ADMIN_SERVER Public Key is added to ~/.ssh/authorized_keys.."
