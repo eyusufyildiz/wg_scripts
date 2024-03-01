@@ -4,7 +4,7 @@ echo "---------------------------------------------"
 echo "1 Adding Server Key"
 
 function set_vars() {
-    ADMIN_SERVER="amper1.duckdns.org"
+    ADMIN_SERVER="phx4.duckdns.org"
     ADMIN_SERVER_KEY="""
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEi7mtlV7dKTtosJvKFuAB3oiOPFRYTqjJTij7yjamaHlN8bsM48oGo1QLm8HBQW/EAAFHd3LaLyC28qYWAed2ie3j/5Us9LeEHdAWjeZHTr5t+k2LQidgzjlNXZlQw3rxPSR6K7GJc3SthhjEIQb+5dHR7eiXbsUoMNT/vP1qSqq8rzdDn0LWmZpEpw80CIY55yw56uqsveUdl1Opz4w3zrf6L8ViS4LBh5fJpm3pc0UC2T0R/dfFW93z5EoOaVzkv2p3MHSAQhW86omkGGiwAt3RtM8lJvWsxBsAKgW2jnLWpOILzsVd38lCBTUaJCV7e8Ex7Pq+fQHbk+BocleIvGoBUOiACucbR0KF9tVqMHuwelJlmzC3oHoGmSrIvLawg/wZ2xcFOybpKuvQqApmKiPS1qdKz0d/pJw2ZDlMJITtrvHrBA8lkDk/ewdsc5PqvVrq65uyGOhbHg6G2thmImiETcnrlbz5D77zauNr8joMuf4ltaOteESloE5G4w8= yusuf@yyildiz-Air.lan
 \n
