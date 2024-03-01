@@ -2,7 +2,7 @@ import subprocess
 import requests, json
 import time
 
-WG_COLLECTOR_SERVER = "star-vpn.duckdns.org"
+WG_COLLECTOR_SERVER = "phx4.duckdns.org"
 WG_COLLECTOR_PORT = 14533
 wg_metric = {}
 interval = 30
