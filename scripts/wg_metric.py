@@ -41,10 +41,7 @@ def peers_data(int_name):
     wg_metric[int_name]= {}
     wg_metric[int_name]["peers"] = {}
     wg_show = local_cmd(f"sudo wg show {int_name}")
-    if wg_show != 0:
-       lines = list(wg_show.split('\n'))
-    else:
-       lines=""
+    lines = list(wg_show.split('\n'))
     cnt = 0
 
     while cnt < len(lines):
