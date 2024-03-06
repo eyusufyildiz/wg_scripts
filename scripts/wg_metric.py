@@ -10,9 +10,11 @@ wg_metric["time-interval"] = interval
 
 def local_cmd(cmd):
     #print(">", cmd)
-    response = subprocess.check_output(cmd, shell=True).decode("utf-8").strip()
-    return response
-
+    try:
+        response = subprocess.check_output(cmd, shell=True).decode("utf-8").strip()
+        return response
+    except:
+        return ""
 def server_info(int_name):
     r1 = local_cmd(f"cat /sys/class/net/{int_name}/statistics/rx_bytes")
     t1 = local_cmd(f"cat /sys/class/net/{int_name}/statistics/tx_bytes")    
