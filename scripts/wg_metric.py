@@ -30,7 +30,8 @@ def server_info(int_name):
     tx = tbps / (131072*interval)
     rx = rbps / (131072*interval)
 
-    wg_metric["server-name"] = local_cmd(f"/usr/bin/hostnamectl hostname")
+    wg_metric["server-name"] = local_cmd("echo $HOSTNAME")
+    #wg_metric["server-name"] = local_cmd(f"/usr/bin/hostnamectl hostname")
     wg_metric["cpu-load"] = round(cpu_load, 2)
     wg_metric["mem-load"] = round(mem_load, 2)
     wg_metric[int_name]["tx"] = round(tx, 1)
