@@ -5,6 +5,7 @@ echo "4 Registering..."
 
 function set_vars(){
     ADMIN_SERVER="phx4.duckdns.org"
+    ZABBIX_SERVER="phx4.duckdns.org"
     ADMIN_SERVER_PORT=14533
     SERVER_NAME=`echo $HOSTNAME`
     #d1=`shuf -i 11-239 -n1`
@@ -23,6 +24,13 @@ function set_vars(){
     [ ! -d $WG_DIR ] && sudo mkdir -p $WG_DIR
     ls -ld $WG_DIR
 }
+
+function zabbix_agent(){
+    
+    sudo sed -i 's/Server=/${ZABBIX_SERVER}/g' /etc/zabbix/zabbix_agentd.conf
+    sudo systemctl start zabbix_agentd
+    sudo systemctl enable zabbix_agentd
+
 
 function update_kernel(){
     echo "---------------------------------------------"
@@ -108,6 +116,7 @@ function add_crontab(){
 
 set_vars
 gen_keys
+zabbix_agent
 configure_wg
 update_kernel
 start_wg
