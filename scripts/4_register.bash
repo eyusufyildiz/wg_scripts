@@ -26,10 +26,13 @@ function set_vars(){
 }
 
 function zabbix_agent(){
-    
+    wget https://repo.zabbix.com/zabbix/7.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
+    sudo dpkg -i ./zabbix-release_7.0-2+ubuntu22.04_all.deb
+    sudo apt update -y
+    apt install zabbix-agent
     sudo sed -i 's/Server=/${ZABBIX_SERVER}/g' /etc/zabbix/zabbix_agentd.conf
-    sudo systemctl start zabbix_agentd
-    sudo systemctl enable zabbix_agentd
+    systemctl restart zabbix-agent
+    systemctl enable zabbix-agent
 
 
 function update_kernel(){
