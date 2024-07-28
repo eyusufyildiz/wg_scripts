@@ -33,6 +33,7 @@ function zabbix_agent(){
     sudo sed -i 's/Server=/${ZABBIX_SERVER}/g' /etc/zabbix/zabbix_agentd.conf
     systemctl restart zabbix-agent
     systemctl enable zabbix-agent
+}
 
 
 function update_kernel(){
