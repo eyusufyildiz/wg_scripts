@@ -125,7 +125,7 @@ function add_crontab(){
 
 set_vars
 gen_keys
-zabbix_agent
+# zabbix_agent
 configure_wg
 update_kernel
 start_wg
