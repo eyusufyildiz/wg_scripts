@@ -21,9 +21,6 @@ function set_vars(){
     OS_TYPE=`source /etc/os-release && echo $ID`
     ARCH_TYPE=`uname -m`
     WG_DIR="/etc/wireguard/"
-    
-    [ ! -d $WG_DIR ] && sudo mkdir -p $WG_DIR
-    ls -ld $WG_DIR
 }
 
 function zabbix_agent(){
