@@ -28,9 +28,9 @@ function uninstall_app(){
     echo "5.3 Uninstalling Wireguard, Zabbix"
     echo "$OS OS is found ..."
     if [ $OS = "ol" ] || [ $OS = "centos" ]; then
-        sudo yum remove wireguard wireguard-tools zabbix-agent -y 
+        sudo yum remove wireguard wireguard-tools zabbix-agent2 zabbix-agent2-plugin-* -y 
     elif [ $OS = "ubuntu" ] || [ $OS = "debian" ]; then
-        sudo apt remove wireguard wireguard-tools zabbix-agent -y 
+        sudo apt remove wireguard wireguard-tools zabbix-agent2 zabbix-agent2-plugin-* -y 
     fi
     echo "Removing /etc/wireguard/ "
     sudo rm -rf /etc/wireguard/
