@@ -25,7 +25,7 @@ function del_wg0(){
 
 function uninstall_app(){
     echo "---------------------------------------------"
-    echo "5.3 Uninstalling Wireguard"
+    echo "5.3 Uninstalling Wireguard, Zabbix"
     echo "$OS OS is found ..."
     if [ $OS = "ol" ] || [ $OS = "centos" ]; then
         sudo yum remove wireguard wireguard-tools zabbix-agent -y 
@@ -34,7 +34,6 @@ function uninstall_app(){
     fi
     echo "Removing /etc/wireguard/ "
     sudo rm -rf /etc/wireguard/
-    sudo reboot
 }
 
 function remove_key(){
@@ -54,3 +53,4 @@ del_wg0
 uninstall_app
 remove_key
 remove_cron
+sudo reboot
