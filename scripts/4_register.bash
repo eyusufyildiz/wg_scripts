@@ -28,8 +28,8 @@ function zabbix_agent(){
          wget https://repo.zabbix.com/zabbix/7.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
          sudo apt install  ./zabbix-release_7.0-2+ubuntu22.04_all.deb
     elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS = "debian" ]; then
-         wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest%2Bubuntu22.04_all.deb
-         sudo apt install  ./zabbix-release_latest+ubuntu22.04_all.deb 
+         wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
+         sudo dpkg -i zabbix-release_7.0-2+ubuntu22.04_all.deb
     fi
     
     sudo apt update -y
