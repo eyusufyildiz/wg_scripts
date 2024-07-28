@@ -24,10 +24,10 @@ function set_vars(){
 }
 
 function zabbix_agent(){
-    if [ $ARCH_TYPE = 'aarch64' ] || [ $OS = "debian" ]; then
+    if [ $ARCH_TYPE = 'aarch64' ] || [ $OS_TYPE = "debian" ]; then
          wget https://repo.zabbix.com/zabbix/7.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
          sudo dpkg -i  ./zabbix-release_7.0-2+ubuntu22.04_all.deb
-    elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS = "debian" ]; then
+    elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS_TYPE = "debian" ]; then
          wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
          sudo dpkg -i zabbix-release_7.0-2+ubuntu22.04_all.deb
     fi
