@@ -33,6 +33,8 @@ function zabbix_agent(){
     elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS = "debian" ]; then
          wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest%2Bubuntu22.04_all.deb
          sudo dpkg -i ./zabbix-release_latest+ubuntu22.04_all.deb 
+    fi
+    
     sudo apt update -y
     apt install zabbix-agent
     sudo sed -i 's/Server=/${ZABBIX_SERVER}/g' /etc/zabbix/zabbix_agentd.conf
