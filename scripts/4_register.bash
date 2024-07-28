@@ -33,10 +33,10 @@ function zabbix_agent(){
     fi
     
     sudo apt update -y
-    sudo apt install zabbix-agent2
+    sudo apt install zabbix-agent2 zabbix-agent2-plugin-*
     sudo sed -i 's/Server=/${ZABBIX_SERVER}/g' /etc/zabbix/zabbix_agentd.conf
-    sudo systemctl restart zabbix-agent
-    sudo systemctl enable zabbix-agent
+    sudo systemctl restart zabbix-agent2
+    sudo systemctl enable zabbix-agent2
 }
 
 
