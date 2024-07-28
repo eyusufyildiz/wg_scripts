@@ -19,7 +19,7 @@ function set_vars(){
     DEFAULT_WG_IF="wg0"
     SSH_USER_NAME=`echo $USER`
     OS_TYPE=`source /etc/os-release && echo $ID`
-    ARCH_TYPE=``uname -m`
+    ARCH_TYPE=`uname -m`
     WG_DIR="/etc/wireguard/"
     
     [ ! -d $WG_DIR ] && sudo mkdir -p $WG_DIR
