@@ -34,6 +34,7 @@ function uninstall_app(){
     fi
     echo "Removing /etc/wireguard/ "
     sudo rm -rf /etc/wireguard/
+    sudo reboot
 }
 
 function remove_key(){
