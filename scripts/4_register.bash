@@ -19,6 +19,7 @@ function set_vars(){
     DEFAULT_WG_IF="wg0"
     SSH_USER_NAME=`echo $USER`
     OS_TYPE=`source /etc/os-release && echo $ID`
+    VERSION_ID=s`ource /etc/os-release && echo $VERSION_ID`
     ARCH_TYPE=`uname -m`
     WG_DIR="/etc/wireguard/"
 }
@@ -27,9 +28,9 @@ function zabbix_agent(){
     if [ $ARCH_TYPE = 'aarch64' ] || [ $OS_TYPE = "debian" ]; then
          wget https://repo.zabbix.com/zabbix/7.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
          sudo dpkg -i  ./zabbix-release_7.0-2+ubuntu22.04_all.deb
-    elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS_TYPE = "debian" ]; then
-         wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
-         sudo dpkg -i zabbix-release_7.0-2+ubuntu22.04_all.deb
+    elif [ $ARCH_TYPE = 'x86_64' ] || [ $OS_TYPE = "debian" ] || $VERSION_ID=24.04; then
+         wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu24.04_all.deb
+         sudo dpkg -i zabbix-release_7.0-2+ubuntu24.04_all.deb
     fi
     
     sudo apt update -y
