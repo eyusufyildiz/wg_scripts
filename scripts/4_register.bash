@@ -19,7 +19,7 @@ function set_vars(){
     DEFAULT_WG_IF="wg0"
     SSH_USER_NAME=`echo $USER`
     OS_TYPE=`source /etc/os-release && echo $ID`
-    VERSION_ID=s`ource /etc/os-release && echo $VERSION_ID`
+    VERSION_ID=`source /etc/os-release && echo $VERSION_ID`
     ARCH_TYPE=`uname -m`
     WG_DIR="/etc/wireguard/"
 }
